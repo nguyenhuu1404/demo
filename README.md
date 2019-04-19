@@ -58,12 +58,10 @@ php artisan key:generate
 php artisan migrate
 ```
 
-###Local Development Server
+### Local Development Server
 
 ```bash
 php artisan serve
 ```
 
-```
 Truy cập ứng dụng [http://localhost:8000](http://localhost:8000)
-```
