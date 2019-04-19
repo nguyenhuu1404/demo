@@ -22,7 +22,7 @@
 ### Sử dụng git, clone code về server
 
 ```bash
-git clone https://github.com/nguyenhuu1404/colam.git
+git clone https://github.com/nguyenhuu1404/demo.git
 ```
 
 ### Sử dụng composer cài đặt các thư viện laravel
