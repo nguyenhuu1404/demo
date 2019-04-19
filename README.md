@@ -64,4 +64,4 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-Truy cập ứng dụng [Quản lí người dùng](http://localhost:8000/users)
+Truy cập ứng dụng [http://localhost:8000/users](http://localhost:8000/users)
