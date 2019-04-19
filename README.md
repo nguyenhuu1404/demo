@@ -20,20 +20,27 @@
 ## Hướng dẫn cài đặt
 
 - Sử dụng git, clone code về server
+
 git clone https://github.com/nguyenhuu1404/colam.git
 
 - Sử dụng composer cài đặt các thư viện laravel
+
 composer install
 
 - Copy .env.example file to .env, cấu hình các thông tin database trong file .env
+
 cp .env.example .env
 
 - Generate key
+
 php artisan key:generate
 
-- Create database 
+- Create database
+
 php artisan migrate
 
-- Local Development Server 
+- Local Development Server
+
 php artisan serve
+
 Truy cập ứng dụng [http://localhost:8000](http://localhost:8000)
