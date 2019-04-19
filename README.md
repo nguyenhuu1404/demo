@@ -52,10 +52,10 @@ DB_PASSWORD=secret
 php artisan key:generate
 ```
 
-### Create database
+### Create database, seeder
 
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ```
 
 ### Local Development Server
@@ -64,4 +64,4 @@ php artisan migrate
 php artisan serve
 ```
 
-Truy cập ứng dụng [http://localhost:8000](http://localhost:8000)
+Truy cập ứng dụng [Quản lí người dùng](http://localhost:8000/users)
