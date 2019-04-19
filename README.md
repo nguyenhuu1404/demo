@@ -19,28 +19,51 @@
 
 ## Hướng dẫn cài đặt
 
-- Sử dụng git, clone code về server
+### Sử dụng git, clone code về server
 
+```bash
 git clone https://github.com/nguyenhuu1404/colam.git
+```
 
-- Sử dụng composer cài đặt các thư viện laravel
+### Sử dụng composer cài đặt các thư viện laravel
 
+```bash
 composer install
+```
 
-- Copy .env.example file to .env, cấu hình các thông tin database trong file .env
+### Copy .env.example file to .env 
 
+```bash
 cp .env.example .env
+```
 
-- Generate key
+### Cấu hình các thông tin database trong file .env
 
+```
+DB_HOST=localhost
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
+### Generate key
+
+```bash
 php artisan key:generate
+```
 
-- Create database
+### Create database
 
+```bash
 php artisan migrate
+```
 
-- Local Development Server
+###Local Development Server
 
+```bash
 php artisan serve
+```
 
+```
 Truy cập ứng dụng [http://localhost:8000](http://localhost:8000)
+```
