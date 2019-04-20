@@ -19,26 +19,26 @@
 
 ## Hướng dẫn cài đặt
 
-### 1.Sử dụng git, clone code về server
+### 1. Sử dụng git, clone code về server
 
 ```bash
 git clone https://github.com/nguyenhuu1404/demo.git
 ```
 
-### 2.Sử dụng composer cài đặt các thư viện laravel
+### 2. Sử dụng composer cài đặt các thư viện laravel
 
 ```
 cd demo
 composer install
 ```
 
-### 3.Copy .env.example file to .env 
+### 3. Copy .env.example file to .env 
 
 ```bash
 cp .env.example .env
 ```
 
-### 4.Cấu hình các thông tin database trong file .env
+### 4. Cấu hình các thông tin database trong file .env
 
 ```
 DB_HOST=localhost
@@ -47,22 +47,28 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
 
-### 5.Generate key
+### 5. Generate key
 
 ```bash
 php artisan key:generate
 ```
 
-### 6.Create database, seeder
+### 6. Create database, seeder
 
 ```bash
 php artisan migrate --seed
 ```
 
-### 7.Local Development Server
+### 7. Local Development Server
 
 ```bash
 php artisan serve
 ```
 
 Truy cập ứng dụng [http://127.0.0.1:8000/users](http://127.0.0.1:8000/users)
+
+## Run tests
+
+```bash
+>./vendor/bin/phpunit
+```

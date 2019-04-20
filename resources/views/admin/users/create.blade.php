@@ -23,7 +23,7 @@
                     <div class="form-group">
                         <label for="password">Mật khẩu</label>
                         <input type="password" class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}" id="password" name="password"
-                                placeholder="Mật khẩu" />
+                                placeholder="Mật khẩu" value="{{ old('password') }}" />
                         <div class="invalid-feedback">{{ $errors->first('password') }}</div>
                     </div>
                     <div class="form-group">

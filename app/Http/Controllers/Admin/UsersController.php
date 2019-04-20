@@ -11,8 +11,7 @@ use App\User;
 class UsersController extends Controller
 {
     public function index() {
-
-        $data['users'] = User::paginate(20);
+        $data['users'] = User::latest('id')->paginate(20);
         return view('admin.users.index', $data);
     }
 
@@ -63,7 +62,8 @@ class UsersController extends Controller
             'name.required' => 'Vui lòng nhập Họ Tên',
             'email.required' => 'Vui lòng nhập Email',
             'email.email' => 'Không đúng định dạng Email',
-            'email.unique' => 'Email này đã trùng vui lòng chọn Email khác'
+            'email.unique' => 'Email này đã trùng vui lòng chọn Email khác',
+            'password.confirmed' => 'Mật Khẩu không trùng nhau',
         ]);
 
         if ($valid->fails()) {
