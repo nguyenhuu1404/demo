@@ -70,5 +70,5 @@ Truy cập ứng dụng [http://127.0.0.1:8000/users](http://127.0.0.1:8000/user
 ## Run tests
 
 ```bash
->./vendor/bin/phpunit
+./vendor/bin/phpunit
 ```
